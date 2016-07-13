@@ -1,5 +1,9 @@
 package com.fengshan;
-//排序工具类
+/**
+ * 排序工具类
+ * @author macbookpro
+ *
+ */
 public class util {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static boolean less(Comparable a,Comparable b){

@@ -1,5 +1,7 @@
 package com.fengshan;
-
+/**	
+ * 利用栈来统计数字出现的次数
+ */
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;

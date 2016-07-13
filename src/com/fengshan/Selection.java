@@ -1,5 +1,9 @@
 package com.fengshan;
-
+/**
+ * 选择排序
+ * @author macbookpro
+ *
+ */
 public class Selection {
 	public static void sort(int[] a){
 		int n=a.length;
