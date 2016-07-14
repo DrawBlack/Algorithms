@@ -9,6 +9,12 @@ package com.sort;
  *      有兴趣可以查看
  */
 public class Insertion {
+	
+	public static void main(String [] args){
+		int [] a={23,3,35,1,3,45,6,6,6574,3};
+		sort(a);
+		show(a);
+	}
 	public static void sort(int[] a){
 		int n=a.length;
 		for(int i=1;i<n;i++)
@@ -37,9 +43,5 @@ public class Insertion {
 		return true;				
 	}
 	
-	public static void main(String [] args){
-		int [] a={23,3,35,1,3,45,6,6,6574,3};
-		sort(a);
-		show(a);
-	}
+	
 }

@@ -1,15 +1,26 @@
 package com.sort;
-
+/**
+ * 改良的插入排序
+ * @author wangjie
+ *
+ */
 public class ImproveInsertion {
-	
+	public static void main(String [] args){
+		int [] a={4,23,3,35,1,3,45,6,6,6574};
+		sort(a);
+		show(a);
+	}
 	public static void sort(int[] a){
 		int n=a.length;
-		for(int i=1;i<n;i++)
-			for(int j=i;j>=0 && less(a[i],a[j]);j--){
-				for(int k=i;k>j;k--)		//把较大的元素向右移
-					a[k]=a[k-1];
-				a[j]=a[i];
+		for(int i=1;i<n;i++){
+			int num=a[i];
+			int j=-1;
+			while(j<i&&less(a[++j],a[i]));		//找到所要插得位置
+			for(int k=i;k>j;k--){				//
+				a[k]=a[k-1];
 			}
+			a[j]=num;
+		}
 	}
 	
 	public static boolean less(int a,int b){
@@ -32,10 +43,6 @@ public class ImproveInsertion {
 		return true;				
 	}
 	
-	public static void main(String [] args){
-		int [] a={23,3,35,1,3,45,6,6,6574};
-		sort(a);
-		show(a);
-	}
+	
 
 }
