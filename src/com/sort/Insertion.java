@@ -6,7 +6,7 @@ package com.sort;
  *      最坏情况下需要 N^2/2次比较和N^2/2次交换，最好情况下需要N-1次比较和0次交换。
  * @author WangJie
  *      要大幅提高插入排序算法并补办，只需要在内循环中将较大的元素都向右移动而不是总交换两个元素（这样访问数组的次数能减半）。
- *      有兴趣可以查看
+ *      有兴趣可以查看ImproveInseertion
  */
 public class Insertion {
 	
@@ -22,6 +22,7 @@ public class Insertion {
 				exch(a, j, j-1);
 			}
 	}
+	
 	
 	public static boolean less(int a,int b){
 		return a<b;
