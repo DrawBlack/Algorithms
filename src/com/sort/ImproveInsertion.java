@@ -16,7 +16,7 @@ public class ImproveInsertion {
 			int num=a[i];
 			int j=-1;
 			while(j<i&&less(a[++j],a[i]));		//找到所要插得位置
-			for(int k=i;k>j;k--){				//
+			for(int k=i;k>j;k--){				//把j右边的向右移，再把a[i]放在a[j]处
 				a[k]=a[k-1];
 			}
 			a[j]=num;
