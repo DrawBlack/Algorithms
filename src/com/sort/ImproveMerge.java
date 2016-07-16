@@ -17,7 +17,7 @@ public class ImproveMerge {
 		
 		sort(a,0,a.length-1);
 	}
-	
+	//先把小数组用选择排序排序，再用归并。
 	private static void sort(int[] a, int lo,int hi){
 		int mid=lo+(hi-lo)/2;
 		if(hi-lo<2){
